@@ -9,6 +9,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready( function(){
+
+   
+    var 옵션 = {
+        auto : true,
+        mode : 'horizontal',
+        speed : 1500,
+        startSlide : 0,
+        pause : 4000,
+        slideWidth: 0,
+        slideMargin : 0,
+    
+        }
+
+    $('.slider').bxSlider( 옵션 );
+
+
+
+} );
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -588,26 +609,7 @@ function naviMenu() {
 
 // 슬라이드 --------------------------------------
 
-// $(document).ready( function(){
 
-   
-// var 옵션 = {
-//     auto : true,
-//     mode : 'horizontal',
-//     speed : 1500,
-//     startSlide : 0,
-//     pause : 4000,
-//     slideWidth: 0,
-//     slideMargin : 0,
-   
-//     }
-
-// $('.slider').bxSlider( 옵션 );
-
-
-// var slideLis = document.querySelectorAll('.slider');    
-
-// } );
 
 
 

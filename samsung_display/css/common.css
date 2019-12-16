@@ -251,24 +251,62 @@ header{
 }
 
 
+/*메인 bx 슬라이더*/
+div.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+div.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 45%;
+    margin-top: -16px;
+    outline: 0;
+    width: 50px;
+    height: 56px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+div.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../images/btn-next.png)no-repeat center center;
+}
+
+div.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../images/btn-prev.png)no-repeat center center;
+}
+div.bx-wrapper .bx-next:hover, div.bx-wrapper .bx-next:focus {
+    background-position: 0px 0;
+}
 
 /* main  */
+
+
 
 .main_visual {
     width: 100%;
     position: relative;
-    padding-top: 46.25%;/*555/1200*/
+
 
 }
+
 .visual_slide {
     width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    top: 0;
+    max-width: 1200px;   
     position: absolute;
     box-sizing: border-box;
     overflow: hidden;   
     float: left;
+}
+.slide_img {
+    position: absolute;
+    padding-top: 46.25%; 
+    position: relative;
 }
 .slide_img > picture img {
     position: absolute;
@@ -320,15 +358,15 @@ header{
     color: #000;
 }
 
-.visual_arrow {
+ .visual_arrow {
     font-size: 0;
     position: absolute;
-    top:50%;
+    top:45%;
     left:10px;
     right:10px;
     margin-top:-26px;
 }
-.visual_arrow .pre_btn > a {
+/* .visual_arrow .pre_btn > a {
     float: left;
     background: url(../images/btn-prev.png)no-repeat center center;
     width: 50px;
@@ -340,7 +378,8 @@ header{
     width: 50px;
     height: 56px;
     display: inline-block;   
-}
+} */
+
 .round_bg  {
     position: absolute;
     bottom:0px; 
@@ -1314,14 +1353,18 @@ header{
         display: block;
     }
     
-    .main_visual {
-        
-        padding-top: 121.614583%;/*934/768*/
+  
+    .slide_img {   
+        padding-top: 121.614583%;  /*934/768 */       
     }
+  
     .visual_arrow {
         display: none;
     }
     
+    div.bx-wrapper .bx-controls-direction a {
+        display: none;
+    }
     
   
     
