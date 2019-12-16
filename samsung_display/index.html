@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko" class="b">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>samsung</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="all" href="css/common.css" />
-
-	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"> -->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>삼성 js</title>
+<link rel="stylesheet" media="all" href="css/common.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
 <div class="wrap">
-	<header>
+    <header>
         <div class="head_langsns">
             <div class="lang">
                 <a href="">Korean</a>
@@ -23,7 +23,7 @@
                 <a href="">Newsroom</a>
                 <a href="">Facebook</a>
                 <a href="">YouTube</a>
-            </div>
+            </div>  
         </div>
 
         <div class="head_inner">
@@ -114,8 +114,7 @@
                             </div>
                         </li>
                         <li class="navi_samsung">
-                            <a href="">고객지원</a>  
-                            <!-- <div class="sub_inner"  ></div>-->
+                            <a href="">고객지원</a>
                         </li>
                     </ul>
                     <ul class="m_navi_lang navi_left">
@@ -135,101 +134,102 @@
         
     </header>
     
-	<!-- main 시작 -->
-	<main>
-		<div class="main_visual">
-			<ul>
-				<li class="visual_slide" style="display: none;">
-					<div class="slide_img" >
+    <!-- main 시작 -->
+    <main>
+        <div class="main_visual">
+            <ul class="slider clear">
+                <li class="visual_slide" >
+                    <div class="slide_img" >
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-kv-01-m.jpg"></source>                            
                             <img src="images/main-kv-01.jpg" alt="Display of Things 이미지">
                         </picture>
-					</div>
-					<div class="slide_title">
-						<em>Vision</em>
-						<strong>Display of Things</strong>
-						<p>5G 기반의 IoT를 통해 연결된 세상의<br/>
-						'사물 디스플레이' 시대를 주도하겠습니다.</p>
-						<a href="" class="slide_btn">자세히보기</a>
-					</div>
-				</li>
-				<li class="visual_slide" style="display: none;">
-					<div class="slide_img" >
+                    </div>
+                    <div class="slide_title">
+                        <em>Vision</em>
+                        <strong>Display of Things</strong>
+                        <p>5G 기반의 IoT를 통해 연결된 세상의<br/>
+                        '사물 디스플레이' 시대를 주도하겠습니다.</p>
+                        <a href="" class="slide_btn">자세히보기</a>
+                    </div>
+                </li>
+                <li class="visual_slide" >
+                    <div class="slide_img" >
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-kv-02-m.jpg"></source>                            
                             <img src="images/main-kv-02.jpg" alt="이미지">
                         </picture>
-					</div>
-					<div class="slide_title">
-						<em>Product</em>
+                    </div>
+                    <div class="slide_title">
+                        <em>Product</em>
                         <strong>Display of Things<br/>
                                 Hole in Screen
                         </strong>
-						<p>홀(Hole) 디스플레이로 구현한 더 완벽해진 풀 스크린</p>
-						<a href="" class="slide_btn">자세히보기</a>
-					</div>
-				</li>
-				<li class="visual_slide" style="display: block;">
-					<div class="slide_img" >
+                        <p>홀(Hole) 디스플레이로 구현한 더 완벽해진 풀 스크린</p>
+                        <a href="" class="slide_btn">자세히보기</a>
+                    </div>
+                </li>
+                <li class="visual_slide" >
+                    <div class="slide_img" >
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-kv-03-m.jpg"></source>                            
                             <img src="images/main-kv-03.jpg" alt="이미지">
                         </picture>
-					</div>
-					<div class="slide_title">
-						<em>News</em>
+                    </div>
+                    <div class="slide_title">
+                        <em>News</em>
                         <strong>삼성 OLED,<br/>
                                 프리미엄 노트북 시장 출사표
                         </strong>
-						<p>세계 최초, UHD 해상도의 노트북용 OLED 디스플레이 개발</p>
-						<a href="" class="slide_btn">자세히보기</a>
-					</div>
-				</li>
-				<li class="visual_slide" style="display: none;">
-					<div class="slide_img" >
+                        <p>세계 최초, UHD 해상도의 노트북용 OLED 디스플레이 개발</p>
+                        <a href="" class="slide_btn">자세히보기</a>
+                    </div>
+                </li>
+                <li class="visual_slide" >
+                    <div class="slide_img" >
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-kv-04-m.jpg"></source>                         
                             <img src="images/main-kv-04.jpg" alt="이미지">
                         </picture>
-					</div>
-					<div class="slide_title">
-						<em>Product</em>
+                    </div>
+                    <div class="slide_title">
+                        <em>Product</em>
                         <strong>마침내 시작된<br/>
                                 8K 초고화질 시대
                         </strong>
                         <p>8K 고해상도는 모든 장면에서 아주 작은 <br/>
                             디테일까지 살려 궁극의 깊이감을 완성합니다.
                         </p>
-						<a href="" class="slide_btn">자세히보기</a>
-					</div>
-				</li>
-			</ul>
-			<div class="visual_arrow">
-				<div class="pre_btn"><a href="">이전</a></div>
-				<div class="next_btn"><a href="">다음</a></div>
-			</div>
-			<div class="round_bg clear">
-				<ul class="rolling_btn">
-					<li ><a class="on" href="">1</a></li>
-					<li ><a href="">2</a></li>
-					<li ><a href="">3</a></li>
-					<li ><a href="">4</a></li>
+                        <a href="" class="slide_btn">자세히보기</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="visual_arrow">
+                <div class="pre_btn"><a href="">이전</a></div>
+                <div class="next_btn"><a href="">다음</a></div>
+            </div>
+            <div class="round_bg clear">
+                <ul class="rolling_btn">
+                    <li ><a class="on" href="">1</a></li>
+                    <li ><a href="">2</a></li>
+                    <li ><a href="">3</a></li>
+                    <li ><a href="">4</a></li>
+                    
                 </ul>
                 <a href="" class="rolling_stop ">stop</a>
-			</div>
-		</div>
-		<div class="company">
+            </div>
+        </div>
+        <div class="company">
             <h3>COMPANY</h3>
             <ul class="clear">
                 <li class="company_inner">
                     <a href="">
                         <div class="compnay_icon" >
                             <img src="images/user-tie-solid.svg">
-						</div>
-						<div class="compnay_text">
-							<strong class="company_tt">CEO 인사말</strong>
-						</div>
+                        </div>
+                        <div class="compnay_text">
+                            <strong class="company_tt">CEO 인사말</strong>
+                        </div>
                     </a>
                 </li>
                 <li class="company_inner">
@@ -265,8 +265,8 @@
                     </a>
                 </li>
             </ul>
-		</div>
-		<div class="porcuct_box">
+        </div>
+        <div class="porcuct_box">
             <h3>PRODUCTS</h3>
             <ul class="clear">
                 <li class="porcucts inner1">
@@ -311,98 +311,99 @@
                 </li>
             </ul>    
 
-		</div>
-		<div class="pormotional">
-			<h3>PROMOTIONAL CENTER</h3>
-			<div class="pormotional_inner" >
-				<a href="" >
-					<div class="video_photo">
+        </div>
+        <div class="pormotional">
+            <h3>PROMOTIONAL CENTER</h3>
+            <div class="pormotional_inner" >
+                <a href="#">
+                    <div class="video_photo">
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-promotion01-01-m.jpg"></source>                         
                             <img src="images/main-promotion01-01.jpg" alt="홍보관 영상이미지" >
                         </picture>
                         <span>삼성디스플레이 홍보관 현장 스케치</span>
                         <img src="images/play-circle-regular.svg" alt="play 버튼" class="video_play_btn"/>
-					</div>
+                    </div>
                 </a>
                 <div class="video_play" >
-                    <div class="play_inner">         
-                        <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/6PDhn0J-1xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <div class="play_inner"> 
+                        <!--  유튜브때문에 콘솔에 노란색 경고뜸 -->
+                        <!-- <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/6PDhn0J-1xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
                         <a href="" class="video_close"><img src="images/btn-close--video-white.png" alt="비디오 닫기 버튼"/></a>  
                         <div class="play_bg"></div>
                     </div>
                 </div>
-			</div>
-		</div>
-		<div class="brandsite">
-			<h3>BRAND SITE</h3>
-			<ul class="clear">
-				<li class="brand_inner">
-					<a href=""> 
+            </div>
+        </div>
+        <div class="brandsite">
+            <h3>BRAND SITE</h3>
+            <ul class="clear">
+                <li class="brand_inner">
+                    <a href=""> 
                         <div>
                             <picture>
                                 <source media="(max-width:768px)" srcset="images/main-brand01-m.jpg"></source>                         
                                 <img src="images/main-brand01.jpg">
                             </picture>
                         </div>
-						<span>삼성디스플레이 TV / Monitor </span>
-					</a>
-				</li>
-				<li class="brand_inner">
-					<a href="">
+                        <span>삼성디스플레이 TV / Monitor </span>
+                    </a>
+                </li>
+                <li class="brand_inner">
+                    <a href="">
                         <div>
                             <picture>
                                 <source media="(max-width:768px)" srcset="images/main-brand02-m.jpg"></source>                         
                                 <img src="images/main-brand02.jpg">
                             </picture>
                         </div>
-						<span>삼성디스플레이 PID</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="insights">
-			<h3>INSIGHTS</h3>
-			<ul class="clear">
-				<li class="insights_inner">
-					<a href="">
+                        <span>삼성디스플레이 PID</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="insights">
+            <h3>INSIGHTS</h3>
+            <ul class="clear">
+                <li class="insights_inner">
+                    <a href="">
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-insight01-m.jpg"></source>                         
                             <img  class="photo" src="images/main-insight01.jpg">
                         </picture>
-						<strong >News</strong>
-						<p>삼성디스플레이, 세계 최초 ‘QD’에 13.1조 투자 </p>
-					</a>
-				</li>
-				<li class="insights_inner">
-					<a href="">
+                        <strong >News</strong>
+                        <p>삼성디스플레이, 세계 최초 ‘QD’에 13.1조 투자 </p>
+                    </a>
+                </li>
+                <li class="insights_inner">
+                    <a href="">
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-insight02-m.jpg"></source>                         
                             <img  class="photo" src="images/main-insight02.jpg">
                         </picture>
-						<strong class="icon_go">Newsroom</strong>
-						<p>[신입사원 SDC 탐구생활] 10편 – 즐거운 일터를 만드는 삼성디스플레이 특급 요원들~ </p>
-					</a>
-				</li>
-				<li class="insights_inner">
-					<a href="">
+                        <strong class="icon_go">Newsroom</strong>
+                        <p>[신입사원 SDC 탐구생활] 10편 – 즐거운 일터를 만드는 삼성디스플레이 특급 요원들~ </p>
+                    </a>
+                </li>
+                <li class="insights_inner">
+                    <a href="">
                         <picture>
                             <source media="(max-width:768px)" srcset="images/main-insight03-m.jpg"></source>                         
                             <img  class="photo" src="images/main-insight03.jpg">
                         </picture>
-						<strong class="icon_go">Facebook</strong>
-						<p>어르신들, 맛있는 반찬 배달 왔습니다!
-						‘징검다리 봉사팀’의 반찬 만들기 봉사활동 </p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="newsletter">
-			<a href="">NEWS LETTER 구독 신청</a>
-		</div>
-	</main>
-	<!-- main 끝-->
-	<footer>     
+                        <strong class="icon_go">Facebook</strong>
+                        <p>어르신들, 맛있는 반찬 배달 왔습니다!
+                        ‘징검다리 봉사팀’의 반찬 만들기 봉사활동 </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <a href="">NEWS LETTER 구독 신청</a>
+        </div>
+    </main>
+    <!-- main 끝-->
+    <footer>     
         <div class="foot_inner clear">
             <div class="footer_top clear">
                 <ul class="fotter_etclink ">
@@ -445,21 +446,229 @@
                 <p>Copyright © SAMSUNG DISPLAY All rights reserved.</p>
             </div>
             <div class="lang_select">
-                <a href="" class="ko">한국/한국어</a>
+                <a href="#" class="ko">한국/한국어</a>
                 <div class="on" >
-                    <div class="en" ><a href="" >글로벌/영어</a></div>
-                    <div class="ch"><a href="">중국/중국어</a></div>
+                    <div class="en" ><a href="#" >글로벌/영어</a></div>
+                    <div class="ch"><a href="#">중국/중국어</a></div>
                 </div>
             </div>
         </div>
 
-         <a href="" class="btn_top" style="display: block" ></a>
+            <a href="" class="btn_top" style="display: block" ></a>
 
     </footer>
     
 </div>
+<script>
+
+//메인메뉴 --------------------------------------
+
+naviMenu();
+function naviMenu() {
+    const headWrap = document.querySelector('header');
+    const headInner = headWrap.querySelector('.head_inner');
+    const navEl = headWrap.querySelector('.head_navi')
+    const navLi = headWrap.querySelectorAll('.head_navi > ul > li');
+    let resizeWork;
+    // console.log(navLi);
+
+    //서브체크 
+    // for (let i=0; i < navLi.length; i++){
+    //     if (navLi[i].querySelectorAll('ul')){
+    //         navLi[i].classList.add('on');
+    //     }
+    // }
+
+//피씨메뉴 
+    const wideMenu = {
+        openedMenu:null,
+        menuReset() {
+            // console.log('aa');
+            
+            for (let i=0; i < navLi.length; i++){
+                navLi[i].classList.remove('on');
+            }
+        },
+
+        overWork(e){
+            console.log(e.target.tagName);
+            if(e.target.tagName !== 'A') return;
+            const subLi = e.target.parentNode;
+            const subOn = subLi.querySelector('div');
+            if (subOn) {
+                wideMenu.menuReset();// on 주기 전에 싹지우기 
+                subLi.classList.add('on');
+
+                wideMenu.openedMenu = subOn;
+             } //else if (subOn ===  null) {
+            //     subLi.classList.add('on');
+            // }
+
+        },
+
+        outWork(e){
+            if (wideMenu.openedMenu === null) return;
+            if ( !check(e.relatedTarget) ) {
+                // wideMenu.menuReset();
+				wideMenu.openedMenu.parentNode.classList.remove('on');
+            }
+            
+            function check(moveTo){
+                while(moveTo.tagName !== 'HTML') {
+					if (headWrap === moveTo) {  // 헤더영역에 가면 닫히지 않게 
+						return true;
+					} 
+					moveTo = moveTo.parentNode;
+				}
+				return false;
+            }
+        },
+        //사이즈 
+        start(){
+            this.menuReset();
+            mobileMenu.btn.removeEventListener('click', mobileMenu.openWork);
+            headWrap.removeEventListener('click',mobileMenu.clickWork);
+            headWrap.addEventListener('mouseover', this.overWork);
+			headWrap.addEventListener('mouseout', this.outWork);
+        }
+    }    
+
+//모바일메뉴 
+    const mobileMenu = {
+        btn: document.querySelector('header .m_head_btn'),
+        openWork(e){
+			e.preventDefault();
+            const mHeaderOn = e.target.parentNode.parentNode;
+            if (mHeaderOn.classList.contains('on')){
+                mHeaderOn.classList.remove('on');
+            } else {
+                mHeaderOn.classList.add('on');
+            }
+
+        },
+        clickWork(e){
+			e.preventDefault();
+            const mListOn = e.target.parentNode;
+            if (mListOn.tagName !== 'LI') return;
+
+            if(mListOn.classList.contains('on')){
+                mListOn.classList.remove('on');
+            } else{
+                mListOn.classList.add('on');
+            }
+        },
+        //사이즈 
+        start(){
+            headWrap.removeEventListener('mouseover', wideMenu.overWork);
+			headWrap.removeEventListener('mouseout', wideMenu.outWork);
+            headWrap.addEventListener('click', this.clickWork);
+            this.btn.addEventListener('click',this.openWork);
+        }
+    }
+
+ //사이즈체크 
+    sizeCheck();
+    window.addEventListener('resize', function(){
+        clearTimeout(resizeWork);
+        resizeWork = setTimeout(function(){
+            console.log(window.innerWidth);
+            sizeCheck();
+            
+        },150);
+    }) 
+    function sizeCheck(){
+        if (window.innerWidth > 768) {
+            wideMenu.start();
+        } else {
+            mobileMenu.start();
+        }
+    }
+
+}
+
+// 슬라이드 --------------------------------------
+
+// $(document).ready( function(){
+
+   
+// var 옵션 = {
+//     auto : true,
+//     mode : 'horizontal',
+//     speed : 1500,
+//     startSlide : 0,
+//     pause : 4000,
+//     slideWidth: 0,
+//     slideMargin : 0,
+   
+//     }
+
+// $('.slider').bxSlider( 옵션 );
+
+
+// var slideLis = document.querySelectorAll('.slider');    
+
+// } );
+
+
+
+
+
+// 동영상클릭 --------------------------------------
+videoPlay();
+function videoPlay(){
+    const videoBg = document.querySelector('.pormotional_inner');
+    console.log(videoBg);
+    
+    const playBtn = document.querySelector('.video_play_btn');
+    const closeBtn = document.querySelector('.video_close');
+
+    playBtn.onclick = function(){
+        videoBg.classList.add('on');
+    }
+    closeBtn.onclick =function(){
+        videoBg.classList.remove('on');
+    }
+
+}
+
+
+
+//풋터다국어 --------------------------------------
+langSelect();
+function langSelect(){
+    const langItem = document.querySelector('.lang_select');
+
+    langItem.onclick =function(e){
+        e.preventDefault();
+        if(langItem.classList.contains('active')) {
+            langItem.classList.remove('active');
+          }
+        else {
+            langItem.classList.add('active');
+        }       
+       
+    }  
+        
+}
+
+
+
+//
+
+
+//navi_samsung on이 생기면 서브메뉴 블럭, 
+
+
+
+// 768 부터 모바일 
+//모바일 m_head_btn 클릭했을때  
+//모바일은  head_inner on이 생겨야  열리고 
+//모바일은 navi_samsung 에 클릭했을때 서브메뉴가 열림 
+
+// 메뉴오버 하면 열린다.
+// 헤더에 있으면 안닫힌다
+// 헤더가 아닌곳은 닫히기 
+
+</script>
 </body>
 </html>
-
-
-
