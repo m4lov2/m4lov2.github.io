@@ -10,25 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script>
-    $(document).ready( function(){
 
-   
-    var 옵션 = {
-        auto : true,
-        mode : 'horizontal',
-        speed : 1500,
-        startSlide : 0,
-        pause : 4000,
-        slideWidth: 0,
-        slideMargin : 0,
-    
-        }
-
-    $('.slider').bxSlider( 옵션 );
-
-
-
-} );
 </script>
 </head>
 <body>
@@ -349,7 +331,7 @@
                 <div class="video_play" >
                     <div class="play_inner"> 
                         <!--  유튜브때문에 콘솔에 노란색 경고뜸 -->
-                        <!-- <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/6PDhn0J-1xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+                        <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/6PDhn0J-1xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                         <a href="" class="video_close"><img src="images/btn-close--video-white.png" alt="비디오 닫기 버튼"/></a>  
                         <div class="play_bg"></div>
                     </div>
@@ -491,14 +473,7 @@ function naviMenu() {
     const navEl = headWrap.querySelector('.head_navi')
     const navLi = headWrap.querySelectorAll('.head_navi > ul > li');
     let resizeWork;
-    // console.log(navLi);
 
-    //서브체크 
-    // for (let i=0; i < navLi.length; i++){
-    //     if (navLi[i].querySelectorAll('ul')){
-    //         navLi[i].classList.add('on');
-    //     }
-    // }
 
 //피씨메뉴 
     const wideMenu = {
@@ -521,9 +496,7 @@ function naviMenu() {
                 subLi.classList.add('on');
 
                 wideMenu.openedMenu = subOn;
-             } //else if (subOn ===  null) {
-            //     subLi.classList.add('on');
-            // }
+             } 
 
         },
 
@@ -609,7 +582,26 @@ function naviMenu() {
 
 // 슬라이드 --------------------------------------
 
+$(document).ready( function(){
 
+   
+var 옵션 = {
+    auto : true,
+    mode : 'horizontal',
+    speed : 1000,
+    startSlide : 0,
+    pause : 2000,
+    slideWidth: 0,
+    slideMargin : 0,
+    autoControls : true, // 재생 정지 
+
+    }
+
+$('.slider').bxSlider( 옵션 );
+
+
+
+} );
 
 
 
@@ -655,21 +647,7 @@ function langSelect(){
 
 
 
-//
 
-
-//navi_samsung on이 생기면 서브메뉴 블럭, 
-
-
-
-// 768 부터 모바일 
-//모바일 m_head_btn 클릭했을때  
-//모바일은  head_inner on이 생겨야  열리고 
-//모바일은 navi_samsung 에 클릭했을때 서브메뉴가 열림 
-
-// 메뉴오버 하면 열린다.
-// 헤더에 있으면 안닫힌다
-// 헤더가 아닌곳은 닫히기 
 
 </script>
 </body>
