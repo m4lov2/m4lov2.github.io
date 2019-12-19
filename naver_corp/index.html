@@ -15,13 +15,10 @@
 
 
 <script>
-
-
-
 $(document).ready( function(){
+    var slideLis = document.querySelectorAll('.main_slider > li');
+    var lineWork = document.querySelector('.visual_num_line > span');
 
-   
-   
     var 옵션 = {
         auto : true,
         mode : 'horizontal',
@@ -32,68 +29,27 @@ $(document).ready( function(){
         slideMargin : 0,
         pagerType: 'short',
         pagerShortSeparator : '  |  ',
+        onSliderLoad: function() {
+            locator( this.getCurrentSlide() ); // 슬라이더가 실행될때 처음에 바로
+        },
+        onSlideBefore: function() {
+            locator( this.getCurrentSlide() ); //슬라이더가 오기전에 오는 슬라이더 숫자를카운터해서
         }
+    }
 
     $('.main_slider').bxSlider( 옵션 );
 
-
-    var slideLis = document.querySelectorAll('.main_slider > li')    
-    var lineWork = document.querySelectorAll('.visual_num_line > span');
+    function locator(num) {
+        let setWidth = (num + 1) * 20;
+        lineWork.style.width =  setWidth + '%';
+    }
 
 } );
 
 
 
-// $(document).ready( function(){
-
-//    $('.main_slider').bxSlider(옵션);
-
-
-//     var 옵션 = {
-//         auto: true,
-//         speed : 1500,
-//         startSlide : 0,
-//         pause : 4000,
-//         slideWidth: 0,
-//         slideMargin : 0,
-//         pagerType: 'short',
-//         pagerShortSeparator : '  |  ',
-//     }
-
-
-    
-
-//     var slideLis = document.querySelectorAll('.main_slider > li'); 
-    
-    // console.log(lineWork);  
-
-    //slideLis[0] =  lineWork 가 width20%  
-    //slideLis[1] =  lineWork 가 width20% *2 증가
-    //slideLis[2] =  lineWork 가 width20% *3 증가
-    //slideLis[3] =  lineWork 가 width20% *4 증가
-    //slideLis[4] =  lineWork 가 width20% *5 증가
-
-    // for (var i=0; i < slideLis.length; i++) {
-    //     slideLis[num]
-    // }
-    
-    
-    // function onSlidWork(e){
-    //     var slidLine = slideLis[num];
-    //     if (slidLine) {
-
-    //     }
-    // }
-   
-
-// } );
-
 </script>
 
-<style>
-
-
-</style>
 
 </head>
 <body>
@@ -365,17 +321,9 @@ $(document).ready( function(){
 </header>
 <main>
 <!-- 메인 비주얼 -->
-
-<!--슬라이더샘플
-     <ul class="main_slider">
-        <li><img src="http://placehold.it/600x200"/></li>
-        <li><img src="http://placehold.it/600x200"/></li>
-        <li><img src="http://placehold.it/600x200"/></li>
-</ul> -->
-
 <div class="main_visual">
 	<ul class="main_slider clear">
-		<li data-line="line1" class="visual_img ">
+		<li class="visual_img ">
 			<a href="" >
                 <div class="slogan">
                     <strong>두 번째 네이버 데이터 센터 건립을 위한<br/>
@@ -386,7 +334,7 @@ $(document).ready( function(){
 				<img class="visual" src="images/img_main_slide1.jpg" alt="메인이미지1" >
 			</a>
 		</li>
-		<li data-line="line" class="visual_img " >
+		<li  class="visual_img " >
 			<a href="">
                 <div class="slogan">
 					<strong>삶의 가치를 높이는<br/>기술을 연구합니다.</strong>
@@ -397,7 +345,7 @@ $(document).ready( function(){
 				<img class="visual" src="images/img_main_slide2.jpg" alt="메인이미지2">
 			</a>
 		</li>
-		<li data-line="line" class="visual_img" >
+		<li  class="visual_img" >
 			<a href="">
                 <div class="slogan">
 					<strong>무한한 가능성과의<br/>만남을 기대합니다.</strong>
@@ -408,7 +356,7 @@ $(document).ready( function(){
 				
 			</a>
 		</li>
-		<li data-line="line" class="visual_img" >
+		<li  class="visual_img" >
 			<a href="">
 				<div class="slogan">
 					<strong>무한한 가능성과의<br/>만남을 기대합니다.</strong>
@@ -418,7 +366,7 @@ $(document).ready( function(){
                 <img class="visual" src="images/img_main_slide4.jpg" alt="메인이미지4">
 			</a>
 		</li>
-		<li data-line="line" class="visual_img" >
+		<li  class="visual_img" >
 			<a href="">
 				<div class="slogan">
 					<strong>생활환경지능 기술로<br/>새로운 연결과 발견의 가능성을 만듭니다.</strong>
@@ -438,11 +386,8 @@ $(document).ready( function(){
         <span class="num_off">5</span>
     </div> -->
     <div class="visual_num_line">
-        <span data-line="line1" class="line1" ></span>
-        <span data-line="line2"  ></span>
-        <span data-line="line3"  ></span>
-        <span data-line="line4"  ></span>
-        <span data-line="line5" ></span>
+        <span ></span>
+
     </div>
 </div>
 <!-- 메인 비주얼 끝 -->
@@ -453,12 +398,12 @@ $(document).ready( function(){
 			<h4>NEWS</h4>
 			<a href=""><strong>네이버 ‘프로젝트 꽃’, 청년...</strong>
 			    <p>네이버 ‘프로젝트 꽃’, 청년 혁신가를 웹툰으로 소개하는 마케...</p></a>
-			<a class="btn_notice" href="">바로가기</a>
+			<a class="btn_notice" href="">바로가기<span title="버튼"></span></a>
 		</div>
 		<div class="box career">
 			<h4>CAREER</h4>
 			<em>수 많은 사용자의 목소리에서 내일의 자부심과 무...</em>
-			<a class="btn_notice" href="">네이버에서 일한다는것</a>
+			<a class="btn_notice" href="">네이버에서 일한다는것<span title="버튼"></span></a>
 		</div>
 		<div class="box stock">
             <h4>STOCK</h4>
@@ -468,12 +413,12 @@ $(document).ready( function(){
                 </div>
                 <span class="date">KRX 2019.10.04</span>
             </div>
-			<a class="btn_notice" href="">주가정보</a>
+			<a class="btn_notice" href="">주가정보<span title="버튼"></span></a>
 		</div>
 		<div class="box notice">
 			<h4>결산공고</h4>
 			<em>네이버 상세 재무상태표를 확인할 수 있습니다.</em>
-			<a class="btn_notice" href="">결산공고 보러가기</a>
+			<a class="btn_notice" href="">결산공고 보러가기<span title="버튼"></span></a>
 		</div>
 	</div>
 	<div class="main_banner">
@@ -753,39 +698,6 @@ function sitemapNavi(){
 
   
 
-// 풋터영역 ----------------------------------------------
-
-// familyBtn();
-
-// function familyBtn(){
-//  var wrap = document.querySelector('.wrap');   
-//  var footInner = document.querySelector('footer')
-//  var familyLink = footInner.querySelector('.family > a');
-//  var opLinks = footInner.querySelector('.family_link');
-
-//  console.log(familyLink.tagName);
-//  familyLink.addEventListener('click', 열기);
-
-
-// function 열기(ev) { 
-    
-//     if(ev.target.tagName !=='A') return;
-    
-//     if(opLinks.classList.add('on')){
-        
-//         opLinks.classList.remove('on');
-//     } 
-//     else {
-//         opLinks.classList.add('on');
-//         }
-    
-//     // if (ev.target.className ==='family_site'){
-//     //     opLinks.className= 'family_link on';
-//     // }
-   
-//    }
-
-// };
 
 // 풋터영역 ----------------------------------------------
 familyClick();

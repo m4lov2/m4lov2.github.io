@@ -606,9 +606,10 @@ header.up {
 	overflow: hidden;
 	padding-top:600px;	
 }
+
+/* 슬라이더 라인그리기 */
+
 .visual_num_line {
-	/* border-top:1px solid #fff;
-	opacity: 0.3; */
 	position: absolute;
 	width: 70.909091%; /* 780 / 1100 */
 	height: 1px;
@@ -619,39 +620,41 @@ header.up {
 	top:50%;
 	font-size: 0;	
 }
-.visual_num_line > span {
-	display: none;
-	border-top:1px solid #fff;
-	/* width: 20%; */
-	width: 0;
+.visual_num_line > span {	
+	background-color: #fff;
+	width: 0%;
 	height: 1px;
-	display: inline-block;
+	display: block;
 	float: left;
 	opacity: 1;	
-}
-.visual_num_line > span.line1 {
-	display: none;
+	display: block;
 	transition:all 1s ease;
-	width: 20%;
+	/* border:1px solid red; */
 }
 
-.visual_num_line > span.line2 {
-	display: block;
-	transition:all 1s ease;
-	width: 40%;
+
+/* .progress_bar{
+	width: calc(100% - 320px);
+	background-color: lightgray;
+	height: 1px;
+	position: absolute;
+	bottom:220px;
+	left:50%;
+	transform: translateX(-50%);
+	
 }
-.visual_num_line > span.line3 {
+.progress_bar > span{
+	content: '';
+	width:0;
+	left: 0;
+	top:0;
+	height: 1px;
 	display: block;
-	width: 60%;
-}
-.visual_num_line > span.line4 {
-	display: block;
-	width: 80%;
-}
-.visual_num_line > span.line5 {
-	display: block;
-	width: 100%;
-}
+	background-color:grey;
+	transition:all 0.2s ease; 
+}*/
+
+
 .visual_img > a > .visual {
 	position: absolute;	
     left: 50%;
@@ -925,9 +928,40 @@ div.bx-wrapper .bx-pager, div.bx-wrapper .bx-controls-auto {
 .btn_notice {
 	font-weight:bolder;
 	padding:0 36px 0 0;
+	position: relative;
+	
 }
-.btn_notice > .arrow {
-	font-size: 0;
+.btn_notice:hover{
+	text-decoration: underline;
+}
+.btn_notice > span {
+	position: absolute;
+	width:18px;
+	height: 18px;
+	border-radius: 100%;
+	background-color: transparent;
+	top:1px;
+	margin-left:5px;
+
+}
+.btn_notice:hover > span {
+	background-color: #00c73c;
+
+}
+
+.btn_notice > span::after {
+	content: '';
+	position: absolute;
+	top:5px;
+	background: url(../images/sprite.png)no-repeat -102px -50px;
+	width:5px;
+	height: 8px;
+	margin-left:6px;	
+}
+.btn_notice:hover > span::after {
+
+	background: url(../images/sprite.png)no-repeat -108px -50px;
+
 }
 
 .main_notice .news  a {
@@ -957,9 +991,9 @@ div.bx-wrapper .bx-pager, div.bx-wrapper .bx-controls-auto {
 	overflow: hidden;
 	padding-bottom: 6px;
 }
-.stock_inner > div > * {
-	/* border:1px solid lime; */
-}
+
+
+
 .stock_inner > div > em.cash {
 	font-size: 28px;
 	font-weight: 800;
