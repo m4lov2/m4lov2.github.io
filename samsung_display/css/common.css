@@ -55,7 +55,6 @@ header{
     overflow: hidden;    
 }
 .head_langsns > .lang {
-    /* border:1px solid red; */
     float: left;
     padding-left: 30px;
 }
